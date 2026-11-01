@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Creatikar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500;600&family=Noto+Sans+Devanagari:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="services.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="Creatikar home">
+        <img src="logo.jpg" alt="Creatikar" class="logo__img" />
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="index.html#work"     class="nav__link">Work</a></li>
+        <li><a href="services.html"       class="nav__link nav__link--active">Services</a></li>
+        <li><a href="about.html"         class="nav__link">About</a></li>
+        <li><a href="contact.html"  class="nav__link">Contact</a></li>
+        <li><a href="contact.html"  class="btn btn--pill">Let's Talk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="svc-hero" aria-label="Services hero">
+    <div class="container svc-hero__inner">
+      <div class="svc-hero__left">
+        <p class="svc-hero__label animate fade-up delay-1">
+          <span class="eyebrow__dot"></span>
+          <span class="deva">सेवाएँ</span>&nbsp;&nbsp;OUR SERVICES
+        </p>
+        <h1 class="svc-hero__headline animate fade-up delay-2">
+          What We Create,<br />Edit &amp; <span class="red">Grow.</span>
+        </h1>
+      </div>
+      <p class="svc-hero__sub animate fade-up delay-3">
+        End-to-end creative and digital services,<br class="br--desktop" />
+        built to move brands forward at every stage.
+      </p>
+    </div>
+    <!-- Thin decorative horizontal rule -->
+    <div class="container"><div class="svc-hero__rule animate fade-up delay-4"></div></div>
+  </section>
+
+  <!-- ══════════════════ SERVICES EDITORIAL ══════════════════ -->
+  <section class="svc-main" aria-label="Services list">
+    <div class="container svc-main__grid">
+
+      <!-- ── LEFT sticky column ── -->
+      <aside class="svc-sidebar animate fade-up delay-2">
+        <p class="svc-sidebar__intro">
+          We offer a tight, curated suite of creative and marketing services — nothing generic. Every engagement is built around your brand's specific goals.
+        </p>
+        <div class="svc-sidebar__line"></div>
+        <a href="index.html#contact" class="btn btn--primary svc-sidebar__cta">Start a Project</a>
+
+        <!-- Floating service count -->
+        <div class="svc-sidebar__count">
+          <span class="count-num red">06</span>
+          <span class="count-txt">Core<br/>Services</span>
+        </div>
+      </aside>
+
+      <!-- ── RIGHT service rows ── -->
+      <div class="svc-list" role="list">
+
+        <!-- 01 -->
+        <article class="svc-row animate fade-up delay-2" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">01</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Video Editing</h2>
+                <p class="svc-row__desc">Frame-perfect edits for every platform — from vertical reels to cinematic long-forms.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Reels &amp; Shorts</li>
+                <li class="tag">YouTube</li>
+                <li class="tag">Corporate</li>
+                <li class="tag">Wedding</li>
+                <li class="tag">Promo</li>
+                <li class="tag">Podcast</li>
+                <li class="tag">Motion Graphics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="svc-row animate fade-up delay-3" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">02</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Social Media Management</h2>
+                <p class="svc-row__desc">Consistent presence, data-driven content and community that converts followers into fans.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Content Strategy</li>
+                <li class="tag">Posting &amp; Scheduling</li>
+                <li class="tag">Community Management</li>
+                <li class="tag">Analytics &amp; Reporting</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="svc-row animate fade-up delay-2" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">03</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Performance Marketing</h2>
+                <p class="svc-row__desc">Paid campaigns engineered for measurable ROI — reach the right audience at the right moment.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Meta Ads</li>
+                <li class="tag">Google Ads</li>
+                <li class="tag">Lead Generation</li>
+                <li class="tag">Retargeting</li>
+                <li class="tag">Funnel Optimization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="svc-row animate fade-up delay-3" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">04</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Branding &amp; Identity</h2>
+                <p class="svc-row__desc">Crafting visual languages that feel ownable, timeless and immediately recognisable.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Logo Design</li>
+                <li class="tag">Brand Guidelines</li>
+                <li class="tag">Visual Identity</li>
+                <li class="tag">Packaging</li>
+                <li class="tag">Collaterals</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="svc-row animate fade-up delay-2" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">05</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Content Creation</h2>
+                <p class="svc-row__desc">Original, on-brand content — from ideation and scripting to the final shoot and edit.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Photography</li>
+                <li class="tag">Videography</li>
+                <li class="tag">Scriptwriting</li>
+                <li class="tag">Copywriting</li>
+                <li class="tag">Blogs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="svc-row animate fade-up delay-3" role="listitem" tabindex="0">
+          <div class="svc-row__left">
+            <span class="svc-row__num" aria-hidden="true">06</span>
+            <div class="svc-row__body">
+              <div class="svc-row__top">
+                <h2 class="svc-row__name">Website &amp; SEO</h2>
+                <p class="svc-row__desc">Fast, beautiful web pages optimised to rank, convert, and reflect your brand perfectly.</p>
+              </div>
+              <ul class="svc-tags" aria-label="Sub-services">
+                <li class="tag">Landing Pages</li>
+                <li class="tag">Website Design</li>
+                <li class="tag">On-page SEO</li>
+                <li class="tag">Local SEO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="svc-row__arrow" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </article>
+
+      </div><!-- /svc-list -->
+    </div><!-- /svc-main__grid -->
+  </section>
+
+  <!-- ══════════════════ PROCESS STRIP ══════════════════ -->
+  <section class="process" aria-label="Our process">
+    <div class="container">
+      <p class="process__label animate fade-up delay-1">
+        <span class="eyebrow__dot"></span>HOW WE WORK
+      </p>
+      <div class="process__track animate fade-up delay-2">
+
+        <div class="process__step">
+          <div class="process__dot"></div>
+          <span class="process__num red">01</span>
+          <strong class="process__name">Discover</strong>
+          <p class="process__detail">Deep-dive into your brand, audience and goals.</p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step">
+          <div class="process__dot"></div>
+          <span class="process__num red">02</span>
+          <strong class="process__name">Plan</strong>
+          <p class="process__detail">Strategy, timelines and creative direction locked in.</p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step">
+          <div class="process__dot"></div>
+          <span class="process__num red">03</span>
+          <strong class="process__name">Create</strong>
+          <p class="process__detail">Editing, design and content crafted to brief.</p>
+        </div>
+
+        <div class="process__connector" aria-hidden="true"></div>
+
+        <div class="process__step">
+          <div class="process__dot"></div>
+          <span class="process__num red">04</span>
+          <strong class="process__name">Grow</strong>
+          <p class="process__detail">Launch, distribute, optimise and scale results.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CTA BAND ══════════════════ -->
+  <section class="cta-band animate fade-up delay-1" aria-label="Call to action">
+    <div class="container cta-band__inner">
+      <h2 class="cta-band__heading">Have a project in mind?</h2>
+      <a href="index.html#contact" class="btn btn--primary cta-band__btn">Book a Free Consultation</a>
+    </div>
+  </section>
+
+  <!-- Cursor -->
+  <div id="cursor"      aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

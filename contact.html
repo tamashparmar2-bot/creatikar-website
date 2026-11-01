@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Creatikar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500;600&family=Noto+Sans+Devanagari:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="Creatikar home">
+        <img src="logo.jpg" alt="Creatikar" class="logo__img" />
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="index.html#work"    class="nav__link">Work</a></li>
+        <li><a href="services.html"      class="nav__link">Services</a></li>
+        <li><a href="about.html"         class="nav__link">About</a></li>
+        <li><a href="contact.html"       class="nav__link nav__link--active">Contact</a></li>
+        <li>
+          <a href="#contact-form" class="btn btn--pill">Let's Talk</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="cnt-hero" aria-label="Contact hero">
+
+    <!-- Geo shapes -->
+    <div class="geo geo--circle" aria-hidden="true"></div>
+    <div class="geo geo--line"   aria-hidden="true"></div>
+    <div class="geo geo--dot"    aria-hidden="true"></div>
+
+    <div class="container cnt-hero__inner">
+      <p class="eyebrow animate fade-up delay-1">
+        <span class="eyebrow__dot"></span>
+        CONTACT &nbsp;/&nbsp; <span class="deva">संपर्क करें</span>
+      </p>
+
+      <h1 class="cnt-hero__headline animate fade-up delay-2">
+        Let's Create <span class="red">Something</span><br />Worth Remembering.
+      </h1>
+
+      <p class="cnt-hero__hindi deva animate fade-up delay-3">
+        आइए, कुछ यादगार बनाएं।
+      </p>
+
+      <p class="cnt-hero__sub animate fade-up delay-4">
+        Tell us about your brand. We usually reply within 24 hours.
+      </p>
+    </div>
+
+    <div class="container"><div class="cnt-hero__rule animate fade-up delay-4"></div></div>
+  </section>
+
+  <!-- ══════════════════ MAIN TWO-COL ══════════════════ -->
+  <section class="cnt-main" aria-label="Contact details and form">
+    <div class="container cnt-main__grid">
+
+      <!-- ── LEFT: contact details ── -->
+      <div class="cnt-details animate fade-up delay-2">
+
+        <!-- Call / WhatsApp -->
+        <div class="detail-block">
+          <div class="detail-block__label">
+            <span class="label-en">CALL OR WHATSAPP</span>
+            <span class="label-hi deva">कॉल या व्हाट्सएप</span>
+          </div>
+          <div class="detail-block__value">
+            <a href="tel:+919773135547" class="detail-link">+91 97731 35547</a>
+            <button class="copy-btn" data-copy="+919773135547" aria-label="Copy phone number">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span class="copy-tooltip">
+                <span class="tooltip-en">Copied!</span>
+                <span class="tooltip-hi deva">कॉपी हो गया</span>
+              </span>
+            </button>
+          </div>
+          <a href="https://wa.me/919773135547" target="_blank" rel="noopener" class="wa-link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+            </svg>
+            Chat on WhatsApp
+          </a>
+          <div class="detail-block__line"></div>
+        </div>
+
+        <!-- Email -->
+        <div class="detail-block">
+          <div class="detail-block__label">
+            <span class="label-en">EMAIL</span>
+            <span class="label-hi deva">ईमेल</span>
+          </div>
+          <div class="detail-block__value">
+            <a href="mailto:tamashparmar2@gmail.com" class="detail-link detail-link--sm">tamashparmar2@gmail.com</a>
+            <button class="copy-btn" data-copy="tamashparmar2@gmail.com" aria-label="Copy email address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span class="copy-tooltip">
+                <span class="tooltip-en">Copied!</span>
+                <span class="tooltip-hi deva">कॉपी हो गया</span>
+              </span>
+            </button>
+          </div>
+          <div class="detail-block__line"></div>
+        </div>
+
+        <!-- Working hours -->
+        <div class="detail-block">
+          <div class="detail-block__label">
+            <span class="label-en">WORKING HOURS</span>
+            <span class="label-hi deva">कार्य समय</span>
+          </div>
+          <p class="detail-text">Mon – Sat, 10 AM – 7 PM IST</p>
+          <div class="detail-block__line"></div>
+        </div>
+
+        <!-- Follow us -->
+        <div class="detail-block">
+          <div class="detail-block__label">
+            <span class="label-en">FOLLOW US</span>
+            <span class="label-hi deva">हमें फ़ॉलो करें</span>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank" rel="noopener">Instagram</a>
+            <span class="social-sep" aria-hidden="true">·</span>
+            <a href="#" class="social-link" target="_blank" rel="noopener">YouTube</a>
+            <span class="social-sep" aria-hidden="true">·</span>
+            <a href="#" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="detail-block__line"></div>
+        </div>
+
+      </div>
+
+      <!-- Vertical divider -->
+      <div class="cnt-vline" aria-hidden="true"></div>
+
+      <!-- ── RIGHT: contact form ── -->
+      <div class="cnt-form-wrap animate fade-up delay-3">
+
+        <!-- Success message (hidden until submit) -->
+        <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+          <div class="form-success__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <circle cx="14" cy="14" r="13" stroke="#E31B23" stroke-width="1.5"/>
+              <path d="M8 14l4 4 8-8" stroke="#E31B23" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="form-success__en">Thank you! We'll get back to you soon.</p>
+          <p class="form-success__hi deva">धन्यवाद! हम जल्द ही आपसे संपर्क करेंगे<span class="red">।</span></p>
+        </div>
+
+        <form
+          class="cnt-form"
+          id="contactForm"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          novalidate
+        >
+
+          <!-- Name -->
+          <div class="field-group">
+            <label class="field-label" for="name">
+              Name <span class="field-label__hi deva">नाम</span>
+            </label>
+            <input
+              class="field-input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your full name"
+              autocomplete="name"
+              required
+            />
+            <span class="field-error" id="nameErr" role="alert"></span>
+          </div>
+
+          <!-- Email -->
+          <div class="field-group">
+            <label class="field-label" for="email">
+              Email <span class="field-label__hi deva">ईमेल</span>
+            </label>
+            <input
+              class="field-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <span class="field-error" id="emailErr" role="alert"></span>
+          </div>
+
+          <!-- Phone -->
+          <div class="field-group">
+            <label class="field-label" for="phone">
+              Phone Number <span class="field-label__hi deva">फ़ोन नंबर</span>
+            </label>
+            <input
+              class="field-input"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 00000 00000"
+              autocomplete="tel"
+              pattern="[+\d\s\-]{7,15}"
+              required
+            />
+            <span class="field-error" id="phoneErr" role="alert"></span>
+          </div>
+
+          <!-- Service dropdown -->
+          <div class="field-group">
+            <label class="field-label" for="service">
+              Service Interested In <span class="field-label__hi deva">कौन सी सेवा चाहिए</span>
+            </label>
+            <div class="select-wrap">
+              <select class="field-input field-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Video Editing">Video Editing</option>
+                <option value="Social Media Management">Social Media Management</option>
+                <option value="Performance Marketing">Performance Marketing</option>
+                <option value="Branding & Identity">Branding &amp; Identity</option>
+                <option value="Content Creation">Content Creation</option>
+                <option value="Website & SEO">Website &amp; SEO</option>
+              </select>
+              <svg class="select-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 5l5 5 5-5" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="field-error" id="serviceErr" role="alert"></span>
+          </div>
+
+          <!-- Budget dropdown -->
+          <div class="field-group">
+            <label class="field-label" for="budget">
+              Budget Range <span class="field-label__hi deva">बजट</span>
+              <span class="optional-tag">(optional)</span>
+            </label>
+            <div class="select-wrap">
+              <select class="field-input field-select" id="budget" name="budget">
+                <option value="" disabled selected>Select your budget</option>
+                <option value="Under ₹10k">Under ₹10,000</option>
+                <option value="₹10k–₹25k">₹10,000 – ₹25,000</option>
+                <option value="₹25k–₹50k">₹25,000 – ₹50,000</option>
+                <option value="₹50k–₹1L">₹50,000 – ₹1,00,000</option>
+                <option value="₹1L+">₹1,00,000+</option>
+              </select>
+              <svg class="select-arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 5l5 5 5-5" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Project description -->
+          <div class="field-group">
+            <label class="field-label" for="message">
+              Tell us about your project
+              <span class="field-label__hi deva">अपने प्रोजेक्ट के बारे में बताइए</span>
+            </label>
+            <textarea
+              class="field-input field-textarea"
+              id="message"
+              name="message"
+              placeholder="Briefly describe your project, goals or any specific requirements..."
+              rows="4"
+              required
+            ></textarea>
+            <span class="field-error" id="msgErr" role="alert"></span>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn--primary form-submit" id="submitBtn">
+            <span class="submit-en">Send Message</span>
+            <span class="submit-hi deva">संदेश भेजें</span>
+            <svg class="submit-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════ QUICK-ACTION STRIP ══════════════════ -->
+  <div class="quick-strip animate fade-up delay-1" aria-label="Quick contact actions">
+    <div class="container quick-strip__inner">
+
+      <a href="tel:+919773135547" class="quick-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.06 6.06l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span class="quick-btn__en">Call Now</span>
+        <span class="quick-btn__hi deva">अभी कॉल करें</span>
+      </a>
+
+      <a href="https://wa.me/919773135547" target="_blank" rel="noopener" class="quick-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.528 5.855L.057 23.215a.75.75 0 0 0 .916.917l5.356-1.472A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0"/>
+        </svg>
+        <span class="quick-btn__en">WhatsApp Us</span>
+        <span class="quick-btn__hi deva">व्हाट्सएप करें</span>
+      </a>
+
+      <a href="mailto:tamashparmar2@gmail.com" class="quick-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        <span class="quick-btn__en">Email Us</span>
+        <span class="quick-btn__hi deva">ईमेल करें</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ FAQ ══════════════════ -->
+  <section class="faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <p class="eyebrow animate fade-up delay-1">
+        <span class="eyebrow__dot"></span>
+        <span class="deva faq-deva">अक्सर पूछे जाने वाले सवाल</span>
+        &nbsp; FAQ
+      </p>
+
+      <h2 class="faq__heading animate fade-up delay-2" id="faq-heading">
+        Common Questions
+      </h2>
+
+      <div class="faq__list animate fade-up delay-3" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-item__q" aria-expanded="false" aria-controls="faq1">
+            How long does a video edit take?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a" id="faq1" role="region" hidden>
+            <p>Turnaround depends on complexity — a standard reel or short-form edit is usually delivered within 2–4 business days. Longer formats like YouTube videos or corporate films typically take 5–7 days. Rush delivery is available on request.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-item__q" aria-expanded="false" aria-controls="faq2">
+            Do you offer revisions?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a" id="faq2" role="region" hidden>
+            <p>Yes. Every project includes two rounds of revisions as standard. Additional revision rounds can be added based on your package. We aim to get it right quickly, so we'll ask all the right questions before we start editing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-item__q" aria-expanded="false" aria-controls="faq3">
+            Can you manage my full social media?
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a" id="faq3" role="region" hidden>
+            <p>Absolutely. Our Social Media Management service covers everything — content strategy, post creation, scheduling, community management and monthly analytics reporting. We handle your presence so you can focus on running your business.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ CLOSING BAND ══════════════════ -->
+  <section class="closing-band animate fade-up delay-1" aria-label="Closing statement">
+    <div class="container closing-band__inner">
+      <h2 class="closing-band__text">
+        Your brand's next chapter starts here<span class="red">.</span>
+      </h2>
+      <p class="closing-band__hindi deva">
+        आपके ब्रांड का अगला अध्याय यहीं से शुरू होता है।
+      </p>
+    </div>
+  </section>
+
+  <!-- Cursor -->
+  <div id="cursor"      aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* ═══════════════════════════════════════════════════════════
+   CREATIKAR — Additional UI polish
+   Kept separate so style.css stays layout-focused
+═══════════════════════════════════════════════════════════ */
+
+/* Subtle outline on focus for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* ── Scrollbar (WebKit) ─────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--white); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--red); }
+
+/* ── Selection ──────────────────────────────────────────── */
+::selection { background: var(--red); color: var(--white); }
+
+/* ── Navbar scroll shadow ───────────────────────────────── */
+.navbar.scrolled {
+  box-shadow: 0 1px 24px rgba(10,10,10,.08);
+}
+
+/* ── Play button pulse ──────────────────────────────────── */
+.play-btn::before {
+  content: '';
+  position: absolute;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+  opacity: 0;
+  transform: scale(1);
+  animation: pulse 2.4s ease-out infinite;
+}
+
+@keyframes pulse {
+  0%   { opacity: .5; transform: scale(1);   }
+  100% { opacity: 0;  transform: scale(1.85); }
+}
+
+/* ── Timeline bar animate in ────────────────────────────── */
+.track__bar {
+  animation: barGrow 1.2s cubic-bezier(.4,0,.2,1) both;
+  animation-delay: .8s;
+}
+
+@keyframes barGrow {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+/* ── Cursor dot (desktop only) ──────────────────────────── */
+@media (pointer: fine) {
+  body { cursor: none; }
+
+  #cursor {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--red);
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: multiply;
+    transition: transform .15s ease, opacity .15s ease;
+    transform: translate(-50%, -50%);
+  }
+
+  #cursor-ring {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1.5px solid var(--red);
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: .35;
+    transform: translate(-50%, -50%);
+    transition: width .25s ease, height .25s ease, opacity .25s ease,
+                left .08s linear, top .08s linear;
+  }
+
+  a:hover ~ #cursor,
+  button:hover ~ #cursor { transform: translate(-50%, -50%) scale(2.2); }
+}

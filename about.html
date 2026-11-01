@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Creatikar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500;600&family=Noto+Sans+Devanagari:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAVBAR ══════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar__inner">
+      <a href="index.html" class="logo" aria-label="Creatikar home">
+        <img src="logo.jpg" alt="Creatikar" class="logo__img" />
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="index.html#work"    class="nav__link">Work</a></li>
+        <li><a href="services.html"      class="nav__link">Services</a></li>
+        <li><a href="about.html"         class="nav__link nav__link--active">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn--pill">Let's Talk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="abt-hero" aria-label="About hero">
+
+    <!-- Decorative geometric shapes -->
+    <div class="geo geo--circle"  aria-hidden="true"></div>
+    <div class="geo geo--line"    aria-hidden="true"></div>
+    <div class="geo geo--dot"     aria-hidden="true"></div>
+
+    <div class="container abt-hero__inner">
+      <div class="abt-hero__content">
+        <p class="eyebrow animate fade-up delay-1">
+          <span class="eyebrow__dot"></span>
+          ABOUT US &nbsp;/&nbsp; <span class="deva">हमारे बारे में</span>
+        </p>
+
+        <h1 class="abt-hero__headline animate fade-up delay-2">
+          We Don't Just Edit.<br />
+          We <span class="red">Build Brands.</span>
+        </h1>
+
+        <p class="abt-hero__sub animate fade-up delay-3">
+          Turning ideas into content that today's generation loves.
+        </p>
+      </div>
+
+      <!-- Scrolling marquee strip -->
+      <div class="marquee-wrap animate fade-up delay-4" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Video Editing</span><span class="marquee__sep">·</span>
+          <span>Branding</span><span class="marquee__sep">·</span>
+          <span>Social Media</span><span class="marquee__sep">·</span>
+          <span>Performance Marketing</span><span class="marquee__sep">·</span>
+          <span>Content Creation</span><span class="marquee__sep">·</span>
+          <span>Web &amp; SEO</span><span class="marquee__sep">·</span>
+          <!-- repeat for seamless loop -->
+          <span>Video Editing</span><span class="marquee__sep">·</span>
+          <span>Branding</span><span class="marquee__sep">·</span>
+          <span>Social Media</span><span class="marquee__sep">·</span>
+          <span>Performance Marketing</span><span class="marquee__sep">·</span>
+          <span>Content Creation</span><span class="marquee__sep">·</span>
+          <span>Web &amp; SEO</span><span class="marquee__sep">·</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ OUR STORY ══════════════════ -->
+  <section class="story" aria-labelledby="story-heading">
+    <div class="container story__grid">
+
+      <!-- Left label col -->
+      <div class="story__label-col animate fade-up delay-1">
+        <p class="story__label">
+          <span class="deva">हमारी कहानी</span>
+        </p>
+        <div class="story__redline"></div>
+        <p class="story__sublabel">OUR STORY</p>
+      </div>
+
+      <!-- Right text col -->
+      <div class="story__text animate fade-up delay-2">
+        <p class="story__para story__para--lead" id="story-heading">
+          Creatikar started with one goal: to help businesses grow with the latest trends and the best edits — the kind of content that new generations actually watch, share and remember.
+        </p>
+        <p class="story__para">
+          We blend creativity with strategy so every video, post and campaign has a clear purpose beyond aesthetics. Whether it's a 15-second reel or a full brand rollout, we make sure every frame earns its place and every idea is built to travel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ NUMBERS STRIP ══════════════════ -->
+  <div class="numbers-strip" aria-label="Agency statistics">
+    <div class="container numbers-strip__inner">
+
+      <div class="nstat">
+        <span class="nstat__num" data-target="25" data-suffix="+">0+</span>
+        <span class="nstat__label">Happy Clients</span>
+      </div>
+
+      <div class="nstat__divider" aria-hidden="true"></div>
+
+      <div class="nstat">
+        <span class="nstat__num" data-target="3" data-prefix="" data-suffix=" Years">0 Years</span>
+        <span class="nstat__label">of Experience</span>
+      </div>
+
+      <div class="nstat__divider" aria-hidden="true"></div>
+
+      <div class="nstat">
+        <span class="nstat__num" data-target="100" data-suffix="+">0+</span>
+        <span class="nstat__label">Projects Delivered</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════ WHAT WE BELIEVE ══════════════════ -->
+  <section class="values" aria-labelledby="values-heading">
+    <div class="container">
+      <p class="eyebrow animate fade-up delay-1">
+        <span class="eyebrow__dot"></span>WHAT WE BELIEVE
+      </p>
+      <h2 class="values__heading animate fade-up delay-2" id="values-heading">
+        Two things we'll never compromise on.
+      </h2>
+
+      <div class="values__grid animate fade-up delay-3">
+
+        <div class="value-block" tabindex="0">
+          <span class="value-block__num">01</span>
+          <div class="value-block__body">
+            <p class="value-block__deva deva">रचनात्मकता</p>
+            <h3 class="value-block__name">Creativity</h3>
+            <p class="value-block__desc">Fresh ideas, trending formats and edits that stop the scroll and make audiences feel something they didn't expect.</p>
+          </div>
+        </div>
+
+        <div class="values__vline" aria-hidden="true"></div>
+
+        <div class="value-block" tabindex="0">
+          <span class="value-block__num">02</span>
+          <div class="value-block__body">
+            <p class="value-block__deva deva">नतीजे</p>
+            <h3 class="value-block__name">Results</h3>
+            <p class="value-block__desc">Every creative is built to bring views, leads and growth — not just likes. Beautiful work that actually moves the needle.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ CLOSING CTA ══════════════════ -->
+  <section class="abt-cta animate fade-up delay-1" aria-label="Call to action">
+    <div class="container abt-cta__inner">
+
+      <!-- Red accent shapes inside CTA -->
+      <div class="cta-geo cta-geo--circle" aria-hidden="true"></div>
+      <div class="cta-geo cta-geo--dot"    aria-hidden="true"></div>
+
+      <h2 class="abt-cta__heading">
+        Let's make your brand<br />the next big thing.
+      </h2>
+      <div class="abt-cta__btns">
+        <a href="contact.html"       class="btn btn--primary">Start a Project</a>
+        <a href="index.html#work"    class="btn btn--outline btn--outline-white">View Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursor -->
+  <div id="cursor"      aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creatikar — The Art of Making Brands.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500;600&family=Noto+Sans+Devanagari:wght@700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="polish.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Creatikar home">
+        <img src="logo.jpg" alt="Creatikar — The Art of Making Brands" class="logo__img" />
+      </a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav links -->
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+        <li>
+          <a href="contact.html" class="btn btn--pill">Let's Talk</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="container hero__grid">
+
+      <!-- ── LEFT COLUMN ── -->
+      <div class="hero__left">
+
+        <!-- Tag line above headline -->
+        <p class="hero__eyebrow animate fade-up delay-1">
+          <span class="eyebrow__dot"></span>
+          The Art of Making Brands<span class="red">.</span>
+          <span class="eyebrow__vline" aria-hidden="true"></span>
+          <span class="eyebrow__hi" aria-label="ब्रांड बनाने की कला">ब्रांड बनाने की कला</span>
+        </p>
+
+        <!-- Main headline -->
+        <h1 class="hero__headline animate fade-up delay-2">
+          We Make<br />
+          <span class="red">Brands</span><br />
+          Worth Remembering.
+        </h1>
+
+        <!-- Hindi headline accent -->
+        <p class="hero__headline-hi animate fade-up delay-2">
+          <span class="hi-line" aria-hidden="true"></span>
+          <span class="hero__headline-hi-text">हम ब्रांड बनाते हैं, जो याद रह जाएं।</span>
+        </p>
+
+        <!-- Sub-text -->
+        <p class="hero__sub animate fade-up delay-3">
+          Video editing, social media and digital marketing<br class="br--desktop" />
+          that turns attention into growth.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero__ctas animate fade-up delay-4">
+          <a href="#work" class="btn btn--primary">View Our Work</a>
+          <a href="#contact" class="btn btn--outline">Get a Free Consultation</a>
+        </div>
+
+
+      </div>
+
+      <!-- ── RIGHT COLUMN — Visual card ── -->
+      <div class="hero__right animate fade-up delay-3" aria-hidden="true">
+
+        <!-- Floating card -->
+        <div class="showcase">
+
+          <!-- Play button circle -->
+          <div class="play-btn" role="img" aria-label="Play video">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <polygon points="10,7 22,14 10,21" fill="#FFFFFF"/>
+            </svg>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline">
+            <p class="timeline__label">EDIT TIMELINE</p>
+
+            <div class="track">
+              <span class="track__name">Video</span>
+              <div class="track__bar-wrap">
+                <div class="track__bar track__bar--red" style="width:72%"></div>
+              </div>
+            </div>
+
+            <div class="track">
+              <span class="track__name">Audio</span>
+              <div class="track__bar-wrap">
+                <div class="track__bar" style="width:55%;margin-left:8%"></div>
+              </div>
+            </div>
+
+            <div class="track">
+              <span class="track__name">Motion</span>
+              <div class="track__bar-wrap">
+                <div class="track__bar" style="width:45%;margin-left:20%"></div>
+              </div>
+            </div>
+
+            <div class="track">
+              <span class="track__name">Color</span>
+              <div class="track__bar-wrap">
+                <div class="track__bar track__bar--red" style="width:30%;margin-left:5%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Waveform decoration -->
+          <div class="waveform" aria-hidden="true">
+            <svg viewBox="0 0 280 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline
+                points="0,20 10,10 20,28 30,8 40,24 50,14 60,30 70,6 80,22 90,12 100,26 110,16 120,32 130,8 140,20 150,10 160,28 170,8 180,24 190,14 200,30 210,6 220,22 230,12 240,26 250,16 260,32 270,8 280,20"
+                stroke="#E31B23" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"
+              />
+              <polyline
+                points="0,20 10,26 20,14 30,28 40,10 50,24 60,12 70,30 80,8 90,22 100,14 110,26 120,10 130,28 140,20 150,26 160,14 170,28 180,10 190,24 200,12 210,30 220,8 230,22 240,14 250,26 260,10 270,28 280,20"
+                stroke="#0A0A0A" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.12"
+              />
+            </svg>
+          </div>
+
+          <!-- Mini stat badge -->
+          <div class="badge">
+            <span class="badge__num">5M+</span>
+            <span class="badge__txt">Views Delivered</span>
+          </div>
+        </div>
+
+        <!-- Floating accent shapes -->
+        <div class="shape shape--circle" aria-hidden="true"></div>
+        <div class="shape shape--line"   aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ STATS STRIP ══════════════════════════ -->
+  <div class="stats-strip animate fade-up delay-5" aria-label="Agency statistics">
+    <div class="container stats-strip__inner">
+
+      <div class="stat">
+        <span class="stat__num">100+</span>
+        <span class="stat__label">Projects</span>
+      </div>
+
+      <div class="stat__divider" aria-hidden="true"></div>
+
+      <div class="stat">
+        <span class="stat__num">50+</span>
+        <span class="stat__label">Clients</span>
+      </div>
+
+      <div class="stat__divider" aria-hidden="true"></div>
+
+      <div class="stat">
+        <span class="stat__num">5M+</span>
+        <span class="stat__label">Views Generated</span>
+      </div>
+
+      <div class="stat__divider" aria-hidden="true"></div>
+
+      <div class="stat">
+        <span class="stat__num">3+</span>
+        <span class="stat__label">Years of Craft</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop) -->
+  <div id="cursor"      aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
