@@ -441,6 +441,103 @@
 }
 
 /* ═══════════════════════════════════════════════════════════
+   FOUNDERS
+═══════════════════════════════════════════════════════════ */
+.founders {
+  padding-block: 96px;
+  border-top: 1px solid var(--border);
+}
+
+.founders__heading {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  margin-block-end: 56px;
+}
+
+.founders__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(28px, 4vw, 48px);
+}
+
+.founder-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--white);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.founder-card:hover {
+  border-color: var(--red);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(227,27,35,.08);
+}
+
+.founder-card__img-wrap {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.founder-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 400ms cubic-bezier(.4,0,.2,1);
+}
+
+.founder-card:hover .founder-card__img {
+  transform: scale(1.03);
+}
+
+.founder-card__meta {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.founder-card__role {
+  font-family: var(--font-body);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.founder-card__name {
+  font-family: var(--font-head);
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--black);
+}
+
+.founder-card__phone {
+  font-family: var(--font-body);
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--grey);
+  margin-block-start: 6px;
+  align-self: flex-start;
+  transition: color var(--transition);
+}
+
+.founder-card__phone:hover {
+  color: var(--red);
+}
+
+/* ═══════════════════════════════════════════════════════════
    CLOSING CTA BAND
 ═══════════════════════════════════════════════════════════ */
 .abt-cta {
@@ -551,6 +648,9 @@
   .value-block { padding: 36px 20px; gap: 16px; }
 
   .team__grid { grid-template-columns: 1fr; }
+
+  .founders__grid { grid-template-columns: 1fr; }
+  .founder-card__meta { padding: 24px; }
 
   .team-card { padding: 32px 24px; }
 
